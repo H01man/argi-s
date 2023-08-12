@@ -67,6 +67,7 @@
 .texto p{
     color: white;
     margin: 0;
+    font-family: 'REM', sans-serif;
 }
 
 .titulo{
@@ -102,7 +103,7 @@
 }
 
 .cartas_home .imagen_home{
-    width: 300px;
+    width: 270px;
     height: 100%;
     overflow: hidden;
     position: static;
