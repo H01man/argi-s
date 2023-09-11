@@ -82,7 +82,7 @@ header .header_toggle{
 .navegacion li a{
     border-radius: 30px;
     transition: 0.5s ease;
-    padding: 0px 12px;
+    padding: 0px 15px;
 }
 
 .navegacion li:hover a{
