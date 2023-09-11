@@ -1,0 +1,899 @@
+*{
+  margin: 0;
+  padding: 0;  
+  font-weight: 0;
+}
+
+#body-initial{
+    background-color: #490e11ee;
+}
+
+
+/* Barra de navegacion */
+
+.contenido_barra{
+    width: 100%;
+    height: 560px;
+    position: relative absolute;
+    background-image: url(../imagenes/maine-coon-694730_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.logo_cafe{
+    width: 9em;
+    margin-left: 40px;
+}
+
+.nav_list li a{
+    text-decoration: none;
+}
+
+.nav_list{
+    list-style: none;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding:  1rem 0;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.navegacion i{
+    display: none;
+}
+
+.logo_cafe{
+    width: 9em;
+    margin-right: 10px;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    font-family: "Charm", cursive;
+    font-size: 60px;
+}
+
+.nav_link{
+    padding: 10px;
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-inline: 1em;
+    text-overflow: ellipsis;
+}
+
+header .header_toggle{
+    display: none;
+}
+
+.nav .header_close{
+    display: none;
+} 
+
+.navegacion li a{
+    border-radius: 30px;
+    transition: 0.5s ease;
+    padding: 0px 3em;
+}
+
+.navegacion li:hover a{
+    background-color: #E3DAC9;
+    color: #490e11ee;
+}
+
+.texto{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+.texto p{
+    color: white;
+    margin: 0;
+}
+
+.titulo{
+    font-size: 50px;
+}
+
+.frase{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 7px;
+}
+
+.cerrar{
+    display: none;
+}
+
+.fas {
+    color: white;
+}
+
+/* Contenido inicio */
+
+
+.contenido_home{
+    margin-top: -20px;
+    position: absolute relative;
+    z-index: 235;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0px -20px 28px rgba(0, 0, 0, 0.74);
+    padding: 2em 0 2em 0;
+    width: 100%;
+    background-color: #490e11;
+    display: flex;
+}
+
+.contenido_home>.informacion_home,.imagenes_cocteles{
+    margin-inline: 2em;
+}
+
+.informacion_home{
+    width: 50%;
+}
+
+.cartas_home{
+    width: 100%;
+    margin-block: .9em;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #410E13;
+    transition: all 0.5s ease;
+    padding-left: 1em;
+}
+
+.cartas_home:hover{
+    transform: scale(0.9);
+}
+
+.cartas_home .imagen_home{
+    width: 56%;
+    overflow: hidden;
+    position: static;
+}
+
+.cartas_home .imagen_home img{
+    width: 100%;
+    display: block;
+    
+}
+
+.cartas_home .informacion{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin: 1em;
+}
+
+.cartas_home .informacion p{
+    color: white;
+    margin: 0;
+}
+
+.des_home{
+    font-size: 30px;
+}
+
+.dia_home{
+    font-size: 13px;
+}
+
+.cartas_home .informacion .hora_home{
+    margin-bottom: 30px;
+}
+
+.button_reserva{
+    width: 60%;
+    color: white;
+    background-color: #490e1149;
+    transition: all 0.6s ease;
+}
+
+.button_reserva:hover{
+    background-color: white;
+    color: #490e11 !important;
+}
+
+/* Grid imagenes */
+
+.grid{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 10% ;
+}
+
+.imagenes_cocteles{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 180px 120px 110px 180px;
+}
+
+.imagenes_cocteles div{
+    position: relative;
+    overflow: hidden;
+}
+
+.imagenes_cocteles div img{
+    display: block;
+}
+
+
+.content_home{
+    display: flex;
+}
+
+.imagenes_cocteles .d1{
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 230px;
+    top: -50px;
+    overflow: hidden;
+    position: relative;
+    filter: opacity(.7);
+    transition: all 0.5s ease;
+}
+
+.imagenes_cocteles .d1:hover{
+    filter: opacity(1);
+}
+
+.imagenes_cocteles .d2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    overflow: hidden;
+    position: relative;
+    filter: opacity(.7);
+    transition: all 0.5s ease;
+}
+
+.imagenes_cocteles .d2:hover{
+    filter: opacity(1);
+}
+
+.imagenes_cocteles .d3{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 370px;
+    top: -40px;
+    overflow: hidden;
+    position: relative;
+    filter: opacity(.7);
+    transition: all 0.5s ease;
+}
+
+.imagenes_cocteles .d3:hover{
+    filter: opacity(1);
+}
+
+.imagenes_cocteles .d4{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    overflow: hidden;
+    position: relative;
+    filter: opacity(.7);
+    transition: all 0.5s ease;
+}
+
+.imagenes_cocteles .d4:hover{
+    filter: opacity(1);
+}
+
+.imagenes_cocteles .d5{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    overflow: hidden;
+    position: relative;
+    filter: opacity(.7);
+    transition: all 0.5s ease;
+}
+
+.imagenes_cocteles .d5:hover{
+    filter: opacity(1);
+}
+
+.imagenes_cocteles .d6{
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    filter: opacity(.7);
+    transition: all 0.5s ease;
+}
+
+.imagenes_cocteles .d6:hover{
+    filter: opacity(1);
+}
+
+.imagenes_cocteles .d7{
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    top: -85px;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+    filter: opacity(.7);
+    transition: all 0.5s ease;
+}
+
+.imagenes_cocteles .d7:hover{
+    filter: opacity(1);
+}
+
+.imagenes_cocteles img{
+    position: static;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Boton Hamburguesa */
+
+.abrir_menu{
+    display: none;
+}
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 550;
+}
+
+.footer p{
+    color: white;
+}
+
+.fas {
+    width: 70px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.texto_footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h2{
+    font-family: "Charm", cursive;
+    color: white;
+}
+
+.texto_footer p{
+    margin-inline-end: 15px;
+}
+
+.footer .p1{
+    color: rgba(255, 255, 255, 0.397);
+}
+
+.texto_footer .p2{
+    border-right: 1px solid white;
+    padding-right: 15px;
+}
+
+.redes{
+    display: flex;
+    width: 100%;
+}
+
+.linead,.lineaI{
+    width: 100%;
+    background-color: aliceblue;
+}
+
+/*Products*/
+.contenido_barra_products{
+    width: 100%;
+    height: 600px;
+    position:relative absolute;
+    background-image: url("../imagenes/licores.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.enlaces_header_products{
+    width: 30%;
+    display: flex;
+    margin-right: 3em;
+}
+
+.enlaces_header_products li a{
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: 12em;
+    padding: .2em 0 .2em 0;
+    margin-inline: 1em;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.enlaces_header_products li:hover a{
+    background-color: #E3DAC9;
+    color: #490e11ee;
+}
+
+.enlaces_header_products li span{
+    font-size: 18px;
+}
+
+.barra.scrolled{
+    background-color: #490e11ac;
+}
+
+.contenido_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.products-coffe-container,.products-bar-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.products-bar-container{
+    flex-direction: row;
+}
+
+.container-tittle{
+    width: 30%;
+    text-align: center;
+}
+
+.slide-container{
+    width: 60%;
+    position: relative;
+}
+
+.slide{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+    max-width: 75vw;
+    height: 340px;
+    overflow: hidden;
+    padding: 13em 5em;
+}
+
+.slide-body{
+    color: white;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+.arrow{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 875 !important;
+    width: 1.35em;
+    height: 1.35em;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.arrow i{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.arrow-prev{
+    left: 30px;
+    position: absolute;
+}
+
+.arrow-next{
+    right: 30px;
+}
+
+.cofee-tittle{
+    color: white;
+    font-family: "Charm", cursive;
+    font-size: 50px;
+    text-indent: 5px;
+}
+
+.slide-body .card{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 210px;
+    height: 304px;
+    background-color: blue;
+    padding: 0;
+    overflow: visible;
+    background: transparent !important;
+    border: none !important;
+    margin-inline: 1em;
+}
+
+.card div{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1.3s;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+ .card .card-front{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transform: perspective(200px) rotateY(0deg);
+    border-radius: 22px;
+    box-shadow: 2px 10px 25px rgba(0, 0, 0, 0.611);
+}
+
+.card .card-back{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    color: black;
+    transform: perspective(200px) rotateY(180deg);
+    box-shadow: 0 5px 10px rgb(72, 69, 69);
+}
+
+.product-name,.prduct-description{
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.card .card-back .product-name{
+    font-family: "Charm", cursive;
+    font-size: 38px;
+    font-style: oblique;
+    margin-bottom: .5em;
+}
+
+.card:hover .card-front{
+    transform: perspective(1500px) rotateY(180deg);
+}
+
+.card:hover .card-back{
+    transform: perspective(1500px) rotateY(360deg);
+}
+
+.img-product{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Responsive */
+
+
+@media screen and (min-width: 320px) and (max-width: 620px){
+    
+    /* Menu Hamburguesa */
+
+    header{
+        height: 48px;
+        justify-content: space-between;
+        padding-top: 60px;
+        margin-left: 20px;
+    }
+
+    .navegacion i{
+        display: block;
+        margin-top: 40px;
+        width: 30px;
+    }
+
+    .navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .logo_cafe{
+        margin-left: 0;
+    }
+
+    .header_toggle{
+        display: block;
+        display: inline;
+        font-size: 24px;
+    }
+
+    .nav .header_close{
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+    }
+
+    .nav{
+        position: fixed;
+        top: 0;
+        right: -350px;
+        background-color: #410f13f3;
+        color: #eee;
+        width: 70%;
+        height: 100vh;
+        padding:  24px 0;
+        z-index: 100;
+        transition: 0.5s;
+        margin-left: 17%;
+    }
+
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav_item{
+        margin-block: .3em;
+    
+    }
+
+    header .header_toggle{
+        display: block;
+    }
+    
+    .nav .header_close{
+        display: block;
+        padding-left: 60px;
+    } 
+
+    .nav_link{
+        margin-inline: 0;
+        padding: 0 !important;
+    }
+
+    .navegacion li:hover a{
+        background-color: transparent;
+        color: white;
+    }
+
+    /* Contenido barra */
+
+    .contenido_barra{
+        height: 340px;
+    }
+
+    .texto{
+        width: 80px;
+        margin-top: 50px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+    
+    .frase{
+        font-size: 10px;
+    }
+
+    /* cartas */
+
+    .contenido_home{
+        flex-direction: column;
+    }
+
+    .informacion_home{
+        width: 90%;
+    }
+
+    .contenido_home>.informacion_home,.imagenes_cocteles{
+        margin-inline: 0;
+    }
+
+    .cartas_home{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .cartas_home .informacion{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cartas_home .imagen_home{
+        width: 100%;
+        display: block;
+    }
+
+    .cartas_home .imagen_home img{
+        width: 100%;
+        display: block;
+    }
+
+    .cartas_home .informacion{
+        width: 100%;
+        padding: 15px 0px;
+    }
+
+    .titulo_home{
+        font-size: 20px;
+    }
+
+    .des_home{
+        font-size: 20px;
+    }
+
+    .button_reserva{
+      width: 60%;
+    }
+
+
+    .cartas_home .informacion .hora_home{
+        margin-bottom: 10px;
+    }
+
+    /* Imagenes grid */
+
+    .grid{
+        width: 90%;
+        margin-left: 18px;
+        margin-top: 20%;
+    }
+
+    /* Footer */
+
+    .texto_footer{
+        width: 100%;
+    }
+    
+    .imagenes_cocteles{
+        height: 10%;
+        grid-template-rows: 100px 100px 100px 70px 100px;
+    }
+    
+    .imagenes_cocteles .d1{
+        height: 150px;
+    }
+
+    .imagenes_cocteles .d3{
+        height: 263px;
+    }
+    
+    .imagenes_cocteles .d6{
+        height: 180px;
+    }
+        
+    .imagenes_cocteles .d7{
+        height: 220px;
+    }
+
+    /*Products*/
+    .products-coffe-container,.products-bar-container{
+        flex-direction: column;
+    }
+
+    .container-tittle{
+        width: 100%;
+    }
+
+    .slide-container{
+        width: 100%;
+        margin: .3em 0;
+    }
+
+    .slide{
+        max-width: 90vw;
+        overflow-x: scroll;
+    }
+
+    .arrow-next,.arrow-prev{
+        display: none;
+    }
+
+    .slide-body{
+        left: -30px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card-back::after{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .card-back::after{
+        content: "";
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transition: .5s ease-in-out all;
+        z-index: 1;
+        transform-origin: center;
+    }
+    
+    .card-back:hover::after{
+        transform: scale(700);
+        background: #490e11d5;
+    }
+    
+    .card-back:hover .prduct-description{
+        color: white;
+    }
+    
+    .card-back:hover .product-name{
+        color: white;
+    }
+}
