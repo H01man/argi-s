@@ -797,6 +797,10 @@ header .header_toggle{
     }
 
     /*Products*/
+    .contenido_barra_products{
+        height: 420px;
+    }
+
     .products-coffe-container,.products-bar-container{
         flex-direction: column;
     }
