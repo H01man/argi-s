@@ -119,12 +119,10 @@ header .header_toggle{
 }
 
 /* Contenido inicio */
-
-
-.contenido_home{
+.contenido_home, .contenido_home_products{
     margin-top: -20px;
     position: absolute relative;
-    z-index: 235;
+    z-index: 335;
     border-radius: 25px 25px 0 0;
     box-shadow: 0px -20px 28px rgba(0, 0, 0, 0.74);
     padding: 2em 0 2em 0;
@@ -428,40 +426,9 @@ header .header_toggle{
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
-    background-color: transparent;
 }
 
-.enlaces_header_products{
-    width: 30%;
-    display: flex;
-    margin-right: 3em;
-}
-
-.enlaces_header_products li a{
-    display: flex;
-    justify-content: center;
-    position: static;
-    width: 12em;
-    padding: .2em 0 .2em 0;
-    margin-inline: 1em;
-    border-radius: 30px;
-    transition: .5s;
-}
-
-.enlaces_header_products li:hover a{
-    background-color: #E3DAC9;
-    color: #490e11ee;
-}
-
-.enlaces_header_products li span{
-    font-size: 18px;
-}
-
-.barra.scrolled{
-    background-color: #490e11ac;
-}
-
-.products{
+.contenido_home_products{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -607,8 +574,6 @@ header .header_toggle{
     position: relative;
 }
 
-
-
 .card .card-back .product-name{
     font-family: "Charm", cursive;
     font-size: 38px;
@@ -633,8 +598,6 @@ header .header_toggle{
 
 
 /* Responsive */
-
-
 @media screen and (min-width: 320px) and (max-width: 620px){
     
     /* Menu Hamburguesa */
